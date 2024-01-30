@@ -1,0 +1,23 @@
+### Register
+POST http://localhost:3003/api/users/register
+Content-Type: application/json
+
+{
+    "firstName":"Adeli",
+    "lastName":"Namazii",
+    "email":"adel_orosiia@yahoo.com",
+    "password":"1234",
+    "gender":"false"
+}
+
+### Login
+POST http://localhost:3003/api/users/login
+Content-Type: application/json
+
+{
+    "email":"adel_orosia@yahoo.com",
+    "password":"1234"
+}
+
+### Logout
+DELETE http://localhost:3003/api/users/logout
