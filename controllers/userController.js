@@ -66,7 +66,8 @@ export const loginUser = asyncHandler(async (req, res) => {
     res.cookie("token", refreshToken, {
       httpOnly: true,
       maxAge: 30 * 24 * 60 * 60 * 1000,
-     
+      secure: true,
+      sameSite: 'strict',
     });
     res.json({ accessToken });
   } else {
